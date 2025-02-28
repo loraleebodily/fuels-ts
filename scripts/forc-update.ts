@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { execSync } from 'child_process';
+import { execSync } from "child_process";
 
 (() => {
   // Update
@@ -11,4 +11,6 @@ import { execSync } from 'child_process';
 
   // Run all tasks that use Forc
   execSync(`pnpm execSync turbo run prebuild --force`);
+
+  // Run all tasks that use Forc
 })();
